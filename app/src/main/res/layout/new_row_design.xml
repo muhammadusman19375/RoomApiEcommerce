@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/SearchCardView11"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:id="@+id/constraintLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
+                >
+
+                <ImageView
+                    android:padding="@dimen/_5sdp"
+                    android:id="@+id/imageView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/shoping_mall" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/tv_rating16"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/products_btn_bg"
+                    android:drawableLeft="@drawable/ic_baseline_star_24"
+                    android:fontFamily="@font/beach_sound"
+                    android:gravity="start|center"
+                    android:padding="5dp"
+                    android:text="4.7"
+                    android:textColor="@color/magenta"
+
+                    tools:ignore="TouchTargetSizeCheck" />
+            </RelativeLayout>
+            
+            <TextView
+                android:layout_weight=".4"
+                android:id="@+id/tv_title14"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:padding="5dp"
+                android:fontFamily="@font/beach_sound"
+                android:maxLines="1"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:text="Hey this is the title of this image"
+                android:textColor="@color/magenta" />
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
